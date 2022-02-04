@@ -4,7 +4,7 @@ import fs from 'fs';
 import {DOTENV_FILE} from './util/params.js';
 import {TRunMode} from './contract';
 
-export const runModeInfo = () => {
+export function runModeInfo() {
   const NODE_ENV = process.env.NODE_ENV;
   return {
     NODE_ENV,
@@ -12,7 +12,7 @@ export const runModeInfo = () => {
     isProduction: NODE_ENV === 'production',
     isTest: NODE_ENV === 'test',
   };
-};
+}
 
 /**
  * Preparing environment variables:
@@ -60,10 +60,12 @@ export function getEnv(): NodeJS.ProcessEnv {
 /**
  * Stringify all values so we can pass it to e.g. webpack DefinePlugin
  */
-export const stringifiedProcessEnv = (): { 'process.env': { [key: string]: string } } => ({
-  'process.env': Object.entries(getEnv())
-    .reduce((acc, [key, value]) => {
-      acc[key] = JSON.stringify(value);
-      return acc;
-    }, {} as any)
-});
+export function stringifiedProcessEnv(): { 'process.env': { [key: string]: string } } {
+  return {
+    'process.env': Object.entries(getEnv())
+      .reduce((acc, [key, value]) => {
+        acc[key] = JSON.stringify(value);
+        return acc;
+      }, {} as {[key: string]: string })
+  }
+}
