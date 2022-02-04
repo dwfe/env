@@ -7,6 +7,10 @@
   "types": "./dist/types/index.d.ts",
   "homepage": "https://github.com/dwfe/env",
   "bugs": "https://github.com/dwfe/env/issues",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dwfe/env.git"
+  },
   "keywords": [
     "environment variables",
     "environment",
@@ -14,10 +18,6 @@
   ],
   "author": "Do|While|For|Each",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:dwfe/env.git"
-  },
   "files": [
     "dist",
     "LICENSE",
