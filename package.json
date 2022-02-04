@@ -35,7 +35,7 @@
     "dotenv-expand": "5.1.0"
   },
   "devDependencies": {
-    "@types/node": "16.x.x"
+    "@types/node": "^16.11.22"
   },
   "publishConfig": {
     "access": "public"
