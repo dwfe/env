@@ -4,5 +4,8 @@
     "target": "ESNext",
     "module": "CommonJS",
     "outDir": "../dist/cjs"
-  }
+  },
+  "include": [
+    "../src/**/*"
+  ]
 }
