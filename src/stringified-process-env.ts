@@ -1,4 +1,4 @@
-import {getEnv} from './get-env'
+import {getEnv} from './get-env.js'
 
 /**
  * Stringify all values so we can pass it to e.g. webpack DefinePlugin

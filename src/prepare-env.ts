@@ -1,8 +1,8 @@
 import dotenvExpand from 'dotenv-expand'
 import dotenv from 'dotenv'
 import fs from 'fs'
-import {DOTENV_FILE} from './util/params'
-import {TRunMode} from './contract'
+import {DOTENV_FILE} from './util/params.js'
+import {TRunMode} from './contract.js'
 
 /**
  * Preparing environment variables:
