@@ -1,4 +1,4 @@
-export type TRunMode = 'development' | 'production' | 'test';
+import {TRunMode} from '@do-while-for-each/common';
 
 declare global {
   namespace NodeJS {

@@ -40,7 +40,8 @@
     "dotenv-expand": "5.1.0"
   },
   "devDependencies": {
-    "@types/node": "^16.11.22"
+    "@types/node": "^16.11.22",
+    "@do-while-for-each/common": "^1.1.1"
   },
   "publishConfig": {
     "access": "public"
