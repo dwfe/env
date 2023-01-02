@@ -1,4 +1,4 @@
-import {TRunMode} from '@do-while-for-each/common';
+import {IRunMode} from '@do-while-for-each/common';
 import dotenvExpand from 'dotenv-expand'
 import dotenv from 'dotenv'
 import fs from 'fs'
@@ -9,7 +9,7 @@ import {DOTENV_FILE} from './util/params.js'
  *  1) load variables from .env* files into process.env;
  *  2) set process.env.NODE_ENV
  */
-export function prepareEnv(nodeEnv: TRunMode) {
+export function prepareEnv(nodeEnv: IRunMode) {
   /**
    * Prepare a selection of .env* files depending on the startup mode and priority:
    *  https://github.com/bkeepers/dotenv#what-other-env-files-can-i-use
