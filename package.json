@@ -1,6 +1,6 @@
 {
   "name": "@do-while-for-each/env",
-  "description": "Working with environment variables",
+  "description": "Working with environment variables for Node.js apps",
   "version": "1.0.7",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
